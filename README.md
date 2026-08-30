@@ -28,8 +28,6 @@ The runner expects `TENCENT_MAAS_API_KEY` and optionally `TENCENT_MAAS_BASE_URL`
 python scripts/codex_ab_benchmark.py
 ```
 
-Do not commit API keys. Revoke any key that has appeared in chat, shell history, logs, or screenshots.
-
 ## Limitations
 
 This is a six-category engineering smoke benchmark, not an independent leaderboard. The models use different providers, and the sample is too small for broad claims about general capability. Larger task sets, repeated trials, token cost, provider errors, and confidence intervals are needed for stronger conclusions.
