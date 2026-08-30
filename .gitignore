@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+configs/secrets.env.local
+*.env
+*.env.local
+.codex/
