@@ -1,0 +1,470 @@
+[
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "C",
+    "errors": [
+      "Model metadata for `hy4-preview` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    ],
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/codex-tencent-ab-kt_cqbbm\"))\n",
+    "model": "hy4-preview",
+    "id": "logic_chain",
+    "expected": "C",
+    "elapsed_sec": 14.81,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "C",
+    "errors": [],
+    "stderr": "",
+    "model": "gpt-5.6-sol",
+    "id": "logic_chain",
+    "expected": "C",
+    "elapsed_sec": 14.24,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "9",
+    "errors": [
+      "Model metadata for `hy4-preview` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    ],
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/codex-tencent-ab-kt_cqbbm\"))\n",
+    "model": "hy4-preview",
+    "id": "math_multi",
+    "expected": "9",
+    "elapsed_sec": 13.88,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "9",
+    "errors": [],
+    "stderr": "",
+    "model": "gpt-5.6-sol",
+    "id": "math_multi",
+    "expected": "9",
+    "elapsed_sec": 15.32,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "```python\ndef two_sum(nums, target):\n    seen = {}\n    for i, x in enumerate(nums):\n        j = seen.get(target - x)\n        if j is not None:\n            return [j, i]\n        seen[x] = i\n    return [-1, -1]\n\n\nprint(two_sum([2, 7, 11, 15], 9))  # [0, 1]\n```",
+    "errors": [
+      "Model metadata for `hy4-preview` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    ],
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/codex-tencent-ab-kt_cqbbm\"))\n",
+    "model": "hy4-preview",
+    "id": "code_contract",
+    "expected": "[0, 1]",
+    "elapsed_sec": 20.28,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "```python\ndef two_sum(nums, target):\n    seen = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in seen:\n            return [seen[complement], i]\n        seen[num] = i\n    return [-1, -1]\n\n\nprint(two_sum([2, 7, 11, 15], 9))\n```",
+    "errors": [],
+    "stderr": "",
+    "model": "gpt-5.6-sol",
+    "id": "code_contract",
+    "expected": "[0, 1]",
+    "elapsed_sec": 17.69,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "ALPHA\n123\nomega",
+    "errors": [
+      "Model metadata for `hy4-preview` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    ],
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/codex-tencent-ab-kt_cqbbm\"))\n",
+    "model": "hy4-preview",
+    "id": "constraint",
+    "expected": "ALPHA",
+    "elapsed_sec": 19.57,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "ALPHA\n123\nomega",
+    "errors": [],
+    "stderr": "",
+    "model": "gpt-5.6-sol",
+    "id": "constraint",
+    "expected": "ALPHA",
+    "elapsed_sec": 13.87,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "{\"answer\":42,\"steps\":[\"add\",\"multiply\"],\"confidence\":0.9}",
+    "errors": [
+      "Model metadata for `hy4-preview` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    ],
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/codex-tencent-ab-kt_cqbbm\"))\n",
+    "model": "hy4-preview",
+    "id": "json",
+    "expected": "\"answer\":42",
+    "elapsed_sec": 24.65,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "{\"answer\":42,\"steps\":[\"add\",\"multiply\"],\"confidence\":0.9}",
+    "errors": [],
+    "stderr": "",
+    "model": "gpt-5.6-sol",
+    "id": "json",
+    "expected": "\"answer\":42",
+    "elapsed_sec": 14.25,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "ZX-4179",
+    "errors": [
+      "Model metadata for `hy4-preview` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    ],
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/codex-tencent-ab-kt_cqbbm\"))\n",
+    "model": "hy4-preview",
+    "id": "long_retrieval",
+    "expected": "ZX-4179",
+    "elapsed_sec": 14.01,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "ZX-4179",
+    "errors": [],
+    "stderr": "",
+    "model": "gpt-5.6-sol",
+    "id": "long_retrieval",
+    "expected": "ZX-4179",
+    "elapsed_sec": 15.57,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "C",
+    "errors": [
+      "Model metadata for `hy4-preview` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    ],
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/codex-tencent-ab-06q56y0y\"))\n",
+    "model": "hy4-preview",
+    "id": "logic_chain",
+    "expected": "C",
+    "elapsed_sec": 14.48,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "C",
+    "errors": [],
+    "stderr": "",
+    "model": "gpt-5.6-sol",
+    "id": "logic_chain",
+    "expected": "C",
+    "elapsed_sec": 15.77,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "9",
+    "errors": [
+      "Model metadata for `hy4-preview` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    ],
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/codex-tencent-ab-06q56y0y\"))\n",
+    "model": "hy4-preview",
+    "id": "math_multi",
+    "expected": "9",
+    "elapsed_sec": 14.08,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "9",
+    "errors": [],
+    "stderr": "",
+    "model": "gpt-5.6-sol",
+    "id": "math_multi",
+    "expected": "9",
+    "elapsed_sec": 16.44,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "```python\ndef two_sum(nums, target):\n    \"\"\"返回两下标使其对应元素之和为 target；无解返回 [-1, -1]。\"\"\"\n    seen = {}\n    for i, x in enumerate(nums):\n        j = seen.get(target - x)\n        if j is not None:\n            return [j, i]\n        seen[x] = i\n    return [-1, -1]\n\n\nprint(two_sum([2, 7, 11, 15], 9))\n```",
+    "errors": [
+      "Model metadata for `hy4-preview` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    ],
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/codex-tencent-ab-06q56y0y\"))\n",
+    "model": "hy4-preview",
+    "id": "code_contract",
+    "expected": "[0, 1]",
+    "elapsed_sec": 18.27,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "def two_sum(nums, target):\n    seen = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in seen:\n            return [seen[complement], i]\n        seen[num] = i\n    return [-1, -1]\n\n\nprint(two_sum([2, 7, 11, 15], 9))\n",
+    "errors": [],
+    "stderr": "",
+    "model": "gpt-5.6-sol",
+    "id": "code_contract",
+    "expected": "[0, 1]",
+    "elapsed_sec": 17.63,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "ALPHA\n123\nomega",
+    "errors": [
+      "Model metadata for `hy4-preview` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    ],
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/codex-tencent-ab-06q56y0y\"))\n",
+    "model": "hy4-preview",
+    "id": "constraint",
+    "expected": "ALPHA",
+    "elapsed_sec": 15.73,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "ALPHA\n123\nomega",
+    "errors": [],
+    "stderr": "",
+    "model": "gpt-5.6-sol",
+    "id": "constraint",
+    "expected": "ALPHA",
+    "elapsed_sec": 15.66,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "{\"answer\":42,\"steps\":[\"add\",\"multiply\"],\"confidence\":0.9}",
+    "errors": [
+      "Model metadata for `hy4-preview` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    ],
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/codex-tencent-ab-06q56y0y\"))\n",
+    "model": "hy4-preview",
+    "id": "json",
+    "expected": "\"answer\":42",
+    "elapsed_sec": 22.55,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "{\"answer\":42,\"steps\":[\"add\",\"multiply\"],\"confidence\":0.9}",
+    "errors": [],
+    "stderr": "",
+    "model": "gpt-5.6-sol",
+    "id": "json",
+    "expected": "\"answer\":42",
+    "elapsed_sec": 14.75,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "ZX-4179",
+    "errors": [
+      "Model metadata for `hy4-preview` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    ],
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/codex-tencent-ab-06q56y0y\"))\n",
+    "model": "hy4-preview",
+    "id": "long_retrieval",
+    "expected": "ZX-4179",
+    "elapsed_sec": 27.9,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "ZX-4179",
+    "errors": [],
+    "stderr": "",
+    "model": "gpt-5.6-sol",
+    "id": "long_retrieval",
+    "expected": "ZX-4179",
+    "elapsed_sec": 14.54,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "C",
+    "errors": [
+      "Model metadata for `hy4-preview` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    ],
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/codex-tencent-ab-quyi_8_2\"))\n",
+    "model": "hy4-preview",
+    "id": "logic_chain",
+    "expected": "C",
+    "elapsed_sec": 14.5,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "C",
+    "errors": [],
+    "stderr": "",
+    "model": "gpt-5.6-sol",
+    "id": "logic_chain",
+    "expected": "C",
+    "elapsed_sec": 15.71,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "9",
+    "errors": [
+      "Model metadata for `hy4-preview` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    ],
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/codex-tencent-ab-quyi_8_2\"))\n",
+    "model": "hy4-preview",
+    "id": "math_multi",
+    "expected": "9",
+    "elapsed_sec": 17.46,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "9",
+    "errors": [],
+    "stderr": "",
+    "model": "gpt-5.6-sol",
+    "id": "math_multi",
+    "expected": "9",
+    "elapsed_sec": 14.57,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "```python\ndef two_sum(nums, target):\n    seen = {}  # 值 -> 下标\n    for i, x in enumerate(nums):\n        j = seen.get(target - x)\n        if j is not None:\n            return [j, i]\n        seen[x] = i\n    return [-1, -1]\n\n\nprint(two_sum([2, 7, 11, 15], 9))  # [0, 1]\n```",
+    "errors": [
+      "Model metadata for `hy4-preview` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    ],
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/codex-tencent-ab-quyi_8_2\"))\n",
+    "model": "hy4-preview",
+    "id": "code_contract",
+    "expected": "[0, 1]",
+    "elapsed_sec": 18.19,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "def two_sum(nums, target):\n    seen = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in seen:\n            return [seen[complement], i]\n        seen[num] = i\n    return [-1, -1]\n\n\nprint(two_sum([2, 7, 11, 15], 9))",
+    "errors": [],
+    "stderr": "",
+    "model": "gpt-5.6-sol",
+    "id": "code_contract",
+    "expected": "[0, 1]",
+    "elapsed_sec": 14.85,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "ALPHA\n123\nomega",
+    "errors": [
+      "Model metadata for `hy4-preview` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    ],
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/codex-tencent-ab-quyi_8_2\"))\n",
+    "model": "hy4-preview",
+    "id": "constraint",
+    "expected": "ALPHA",
+    "elapsed_sec": 16.14,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "ALPHA\n123\nomega",
+    "errors": [],
+    "stderr": "",
+    "model": "gpt-5.6-sol",
+    "id": "constraint",
+    "expected": "ALPHA",
+    "elapsed_sec": 14.43,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "{\"answer\":null,\"steps\":[],\"confidence\":0.0}",
+    "errors": [
+      "Model metadata for `hy4-preview` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    ],
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/codex-tencent-ab-quyi_8_2\"))\n",
+    "model": "hy4-preview",
+    "id": "json",
+    "expected": "\"answer\":42",
+    "elapsed_sec": 17.86,
+    "match": false
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "{\"answer\":42,\"steps\":[\"add\",\"multiply\"],\"confidence\":0.9}",
+    "errors": [],
+    "stderr": "",
+    "model": "gpt-5.6-sol",
+    "id": "json",
+    "expected": "\"answer\":42",
+    "elapsed_sec": 14.76,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "ZX-4179",
+    "errors": [
+      "Model metadata for `hy4-preview` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    ],
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/codex-tencent-ab-quyi_8_2\"))\n",
+    "model": "hy4-preview",
+    "id": "long_retrieval",
+    "expected": "ZX-4179",
+    "elapsed_sec": 14.89,
+    "match": true
+  },
+  {
+    "status": "ok",
+    "returncode": 0,
+    "final": "ZX-4179",
+    "errors": [],
+    "stderr": "",
+    "model": "gpt-5.6-sol",
+    "id": "long_retrieval",
+    "expected": "ZX-4179",
+    "elapsed_sec": 13.99,
+    "match": true
+  }
+]
